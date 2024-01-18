@@ -30,7 +30,7 @@ void loop()
           while (Serial.available() < 2) {}
           uint8_t c3 = Serial.read();
           uint8_t c4 = Serial.read();
-          Serial2.printf("%c%c%c%c", 0x1F, 0x24, 01, 02);
+          Serial2.printf("%c%c%c%c", 0x1F, 0x24, c3, c4);
           break;
         }
 
